@@ -29,7 +29,7 @@ function yesClicked() {
     <h1 style="color:white;font-size:3em;">YIPEEEEE!!💕</h1>
     <p style="color:white;font-size:1.5em;margin-top:20px;">
       (Not like you had any other choice🤭)<br>
-      Happy Valentine’s Day🥰 I Love You Baby
+      Happy Valentines Day🥰 I Love You Baby
     </p>
   `;
 }
