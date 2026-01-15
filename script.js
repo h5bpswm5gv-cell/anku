@@ -26,10 +26,10 @@ function yesClicked() {
   launchConfetti();
 
   document.querySelector(".container").innerHTML = `
-    <h1 style="color:white;font-size:3em;">YAYYYY!!! 💍💖</h1>
+    <h1 style="color:white;font-size:3em;">YIPEEEEE!!💕</h1>
     <p style="color:white;font-size:1.5em;margin-top:20px;">
-      I choose you. Today, tomorrow, always ❤️<br>
-      Happy Valentine’s Day 🥰
+      (Not like you had any other choice🤭)<br>
+      Happy Valentine’s Day🥰 I Love You Baby
     </p>
   `;
 }
