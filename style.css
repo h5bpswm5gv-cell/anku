@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(270deg, #ff4e8a, #ff9a9e, #fad0c4);
+    background-size: 600% 600%;
+    animation: gradient 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    animation: pop 1s ease;
+    position: relative;
+  }
+  
+  @keyframes pop {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  .title {
+    color: white;
+    font-size: 2.6em;
+    margin-bottom: 20px;
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+  
+  .gallery img {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .gallery img:nth-child(2) { animation-delay: 1s; }
+  .gallery img:nth-child(3) { animation-delay: 2s; }
+  
+  @keyframes float {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .buttons {
+    position: relative;
+    height: 90px;
+    margin-top: 15px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .yes {
+    background: #ff2d75;
+    color: white;
+    box-shadow: 0 0 20px #ff2d75;
+  }
+  
+  .yes:hover {
+    transform: scale(1.1);
+  }
+  
+  .no {
+    position: absolute;
+    right: 0;
+    background: white;
+    color: #ff2d75;
+  }
+  
+  .no.shake {
+    animation: shake 0.3s;
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+  
+  #message {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.4em;
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  
+  .confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    top: -10px;
+    animation: fall 3s linear forwards;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
